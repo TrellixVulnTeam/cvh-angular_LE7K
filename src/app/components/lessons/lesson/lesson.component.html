@@ -1,0 +1,37 @@
+<div id="lessonContainer">
+  <div class="words-english">
+    <bs-sortable
+      [(ngModel)]="wordsEnglish"
+      itemClass="sortable-item"
+      itemActiveClass="sortable-item-active"
+      placeholderItem="Drag here"
+      placeholderClass="placeholderStyle text-center"
+      wrapperClass="sortable-wrapper"
+    ></bs-sortable>
+  </div>
+  <div class="words-translated" *ngIf="!isLoading">
+    <bs-sortable
+      [(ngModel)]="wordsTranslatedShuffled"
+      itemClass="sortable-item item-translated"
+      itemActiveClass="sortable-item-active"
+      placeholderItem="Drag here"
+      placeholderClass="placeholderStyle text-center"
+      wrapperClass="sortable-wrapper sortable-wrapper-translated"
+    ></bs-sortable>
+    <button
+      class="btn btn-secondary"
+      (click)="confirm()"
+      [disabled]="isCorrect"
+    >
+      Confirm
+    </button>
+    <div class="feedback" *ngIf="isConfirmed">
+      <div class="answer-wrong" *ngIf="!isCorrect">
+        Oops. You got it wrong, try again!
+      </div>
+      <div class="answer-correct" *ngIf="isCorrect">
+        Correct! Move onto next topic.
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+@import "colors", "typography";
+
+#leaderboardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    header {
+        h2 {
+            @include heading2;
+            text-align: center;
+            color: $secondaryLighterGrey;
+        }
+    }
+
+    table {
+        thead {
+            color: $secondaryGreyLight;
+        }
+        tbody {
+            tr {
+                td {
+                    &:first-child {
+                        color: $secondaryGreyLight;
+                    }
+                    &:not(:first-child) {
+                        color: $secondaryLighterGrey;
+                    }
+                }
+            }
+
+            .row-highlight {
+                font-weight: bold;
+                color: $white;
+                font-size: 24px;
+            }
+        }
+    }
+}

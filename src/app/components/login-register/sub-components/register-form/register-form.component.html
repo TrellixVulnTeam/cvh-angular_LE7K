@@ -1,0 +1,58 @@
+<form
+  id="registerForm"
+  #registerForm="ngForm"
+  (ngSubmit)="submitRegister(registerForm.value)"
+>
+  <h2>Register</h2>
+  <span>Your Name</span>
+  <input
+    type="text"
+    class="form-control"
+    id="nameField"
+    aria-describedby="name"
+    placeholder="Your Name"
+    required
+    name="fullName"
+    ngModel
+    fullName
+    #fullName="ngModel"
+  />
+  <span>Enter e-mail</span>
+  <input
+    type="email"
+    class="form-control"
+    id="registerEmailField"
+    aria-describedby="email"
+    placeholder="Enter email"
+    required
+    name="email"
+    ngModel
+    email
+    #email="ngModel"
+  />
+  <span>Enter password</span>
+  <input
+    type="password"
+    class="form-control"
+    id="registerPasswordField"
+    placeholder="Password"
+    required
+    name="password"
+    ngModel
+    password
+    #password="ngModel"
+  />
+  <span>Repeat password</span>
+  <input
+    type="password"
+    class="form-control"
+    id="repeatPasswordField"
+    placeholder="Repeat Password"
+    required
+    name="repeatPassword"
+    ngModel
+    repeatPassword
+    #repeatPassword="ngModel"
+  />
+  <button class="register-butt mt-3" type="submit" value="submit">Register</button>
+</form>

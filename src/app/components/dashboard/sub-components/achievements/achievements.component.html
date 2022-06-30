@@ -1,0 +1,13 @@
+<div id="progressContainer">
+<div class="container">
+  <div class="piramid">
+    <div *ngFor="let item of achievements" class="circle">
+      <span *ngIf="item" class="done">
+        <img src="../../../../../assets/check.svg" alt="My Happy SVG" />
+      </span>
+      <span *ngIf="!item" class="pending"></span>
+    </div>
+  </div>
+</div>
+</div>
+

@@ -1,0 +1,31 @@
+<div id="loginRegisterWrapper">
+  <div
+    id="container"
+    [ngClass]="!login ? 'container right-panel-active' : 'container'"
+  >
+    <div class="form-container sign-up-container">
+      <app-register-form [generateSessionId]="generateSessionId"></app-register-form>
+    </div>
+    <div class="form-container sign-in-container">
+      <app-login-form [generateSessionId]="generateSessionId"></app-login-form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h3>Welcome back,</h3>
+          <p>to use the website please log in using the existing account.</p>
+          <button class="ghost" id="signIn" (click)="switchForm()">
+            Log in
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signUp" (click)="switchForm()" >
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

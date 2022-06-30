@@ -1,0 +1,2079 @@
+<!-- <div id="dashboardContainer">
+  <main class="board-container">
+    <div class="board-left">
+      <div class="intro-text">
+        <p>Hello, {{ currentUser.name }}</p>
+        <p>Time to learn!</p>
+      </div>
+      <app-leaderboard></app-leaderboard>
+    </div>
+    <div class="board-right">
+        <header>
+          <img src="assets/media/logo.svg" alt="">
+            <h1>Vokabello</h1>
+            <span class="profile-icon" (click)="openModalWithComponent()">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.29735 14.3326C5.38901 13.9287 5.13585 13.5269 4.7319 13.4353C4.32796 13.3436 3.92619 13.5968 3.83453 14.0007L5.29735 14.3326ZM7.99981 6.9377C7.69117 7.21394 7.6649 7.68809 7.94115 7.99673C8.21739 8.30538 8.69154 8.33164 9.00019 8.0554L7.99981 6.9377ZM21.25 20.5C20.8358 20.5 20.5 20.8358 20.5 21.25C20.5 21.6642 20.8358 22 21.25 22L21.25 20.5ZM24.75 26.5035C24.75 26.9177 25.0858 27.2535 25.5 27.2535C25.9142 27.2535 26.25 26.9177 26.25 26.5035H24.75ZM7.75 26.5035C7.75 26.9177 8.08579 27.2535 8.5 27.2535C8.91421 27.2535 9.25 26.9177 9.25 26.5035H7.75ZM12.75 21.25L12.75 22H12.75V21.25ZM15.5833 22C15.9975 22 16.3333 21.6642 16.3333 21.25C16.3333 20.8358 15.9975 20.5 15.5833 20.5V22ZM17 5C23.6274 5 29 10.3726 29 17H30.5C30.5 9.54416 24.4558 3.5 17 3.5V5ZM17 29C10.3726 29 5 23.6274 5 17H3.5C3.5 24.4558 9.54416 30.5 17 30.5V29ZM29 17C29 23.6274 23.6274 29 17 29V30.5C24.4558 30.5 30.5 24.4558 30.5 17H29ZM5 17C5 16.0824 5.10285 15.1898 5.29735 14.3326L3.83453 14.0007C3.61549 14.966 3.5 15.97 3.5 17H5ZM9.00019 8.0554C11.1237 6.15479 13.9261 5 17 5V3.5C13.5429 3.5 10.3877 4.80046 7.99981 6.9377L9.00019 8.0554ZM20.5 12.75C20.5 14.683 18.933 16.25 17 16.25V17.75C19.7614 17.75 22 15.5114 22 12.75H20.5ZM17 16.25C15.067 16.25 13.5 14.683 13.5 12.75H12C12 15.5114 14.2386 17.75 17 17.75V16.25ZM13.5 12.75C13.5 10.817 15.067 9.25 17 9.25V7.75C14.2386 7.75 12 9.98858 12 12.75H13.5ZM17 9.25C18.933 9.25 20.5 10.817 20.5 12.75H22C22 9.98858 19.7614 7.75 17 7.75V9.25ZM21.25 22C22.2317 22 23.0916 22.5567 23.7375 23.4543C24.3869 24.3566 24.75 25.5175 24.75 26.5035H26.25C26.25 25.1948 25.7832 23.7289 24.955 22.5781C24.1235 21.4226 22.8584 20.5 21.25 20.5L21.25 22ZM9.25 26.5035C9.25 25.5175 9.61314 24.3566 10.2625 23.4543C10.9084 22.5567 11.7683 22 12.75 22L12.75 20.5C11.1416 20.5 9.8765 21.4226 9.04497 22.5781C8.21683 23.7289 7.75 25.1948 7.75 26.5035H9.25ZM12.75 22H15.5833V20.5H12.75V22Z"
+                  fill="black"
+                />
+              </svg>
+            </span>
+        </header>
+      <app-progress></app-progress>
+      <app-achievements></app-achievements>
+    </div>
+  </main>
+  <div id="dashboardDecoration"></div>
+</div> -->
+
+<header>
+  <div class="nav-header">
+      <div class="header">
+          <img class="logo" src="assets/media/logo-w.svg" alt="">
+
+          <div class="hamburger-list mobile-hamburger">
+              <div class="insert-class">
+                  <input type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                  </div>
+                  <div class="hamburger-items">
+                      <div class="hamburger-items-menu">
+                          <div class="popis">
+                              <span class="icon-menu"></span>
+                              <p>POPIS STANICA</p>
+                          </div>
+
+                          <div class="location">
+                              <span class="icon-location"></span>
+                              <p>LOKACIJE STANICA</p>
+                          </div>
+
+                          <div class="search">
+                              <span class="icon-search"></span>
+                              <p>NAPREDNA PRETRAGA</p>
+                          </div>
+
+                          <div class="contacts">
+                              <span class="icon-profile"></span>
+                              <p>KORISNICI</p>
+                          </div>
+
+                          <div class="list">
+                              <span class="icon-list"></span>
+                              <p>IZVJESTAJI</p>
+                          </div>
+
+                          <div class="settings">
+                              <span class="icon-settings"></span>
+                              <p>POSTAVKE</p>
+                          </div>
+                      </div>
+
+                      <div class="hamburger-items-footer">
+                          <div class="hamburger-items-footer-circle">{{ currentUser.name | shortName }}</div>
+                          <p>{{ currentUser.name }}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="input">
+          <input class="input-field" type="text" id="name" name="name" required minlength="4" maxlength="20"
+              size="10" placeholder="search">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.0005c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+      </div>
+  </div>
+
+</header>
+
+<!-- <main> -->
+  <div class="flex-container">
+      <div class="section advanced-search">
+          <section class="section top">
+              <div class="header">
+                  <h2>Napredna pretraga</h2>
+
+                  <hr>
+              </div>
+
+              <div class="input-search">
+                  <p>Kljucne rijeci</p>
+                  <div class="input">
+                      <input class="input-field" type="text" id="name" name="name" required minlength="4"
+                          maxlength="8" size="10" placeholder="">
+                  </div>
+              </div>
+
+              <div class="input-checkbox">
+                  <form>
+                      <div class="box">
+                          <input type="checkbox" id="item1" name="item1" value="Bike">
+                          <label for="item1">Preventivni tehnicki pregled kocnica</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item2" name="item2" value="Car">
+                          <label for="item2">Ispitivanje tahografa</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item3" name="item3" value="Boat">
+                          <label for="item3">Ispitivanje lakih prikolica</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item4" name="item4" value="Bike">
+                          <label for="item4">Preventivni tehnicki pregled kocnica</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item5" name="item5" value="Bike">
+                          <label for="item5">Preventivni tehnicki pregled kocnica</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item6" name="item6" value="Car">
+                          <label for="item6">Ispitivanje tahografa</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item7" name="item7" value="Boat">
+                          <label for="item7">Ispitivanje lakih prikolica</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item8" name="ite8" value="Bike">
+                          <label for="item8">Preventivni tehnicki pregled kocnica</label>
+                      </div>
+
+                      <div class="box">
+                          <input type="checkbox" id="item9" name="item9" value="Bike">
+                          <label for="item9">Preventivni tehnicki pregled kocnica</label>
+                      </div>
+                  </form>
+              </div>
+          </section>
+
+          <section class="section bottom">
+              <h3>Pretrazi</h3>
+          </section>
+      </div>
+
+      <nav class="section menu">
+          <div class="menu-items">
+              <div class="element-header">
+              </div>
+
+              <div class="element-center">
+                  <span class="icon-menu">
+                      <span class="tooltip-text">Popis Stanica</span>
+                  </span>
+
+                  <span class="icon-location">
+                      <span class="tooltip-text">Locacije Stanica</span>
+                  </span>
+
+                  <span class="icon-search">
+                      <span class="tooltip-text">Napredna Pretraga</span>
+                  </span>
+
+                  <span class="icon-profile">
+                      <span class="tooltip-text">Korisnici</span>
+                  </span>
+
+                  <span class="icon-list">
+                      <span class="tooltip-text">Izvjestaji</span>
+                  </span>
+
+                  <span class="icon-settings">
+                      <span class="tooltip-text">Postavke</span>
+                  </span>
+              </div>
+
+              <div class="element-footer">
+                  <div class="element-footer-circle" (click)="openModalWithComponent()">{{ currentUser.name | shortName }}</div>
+              </div>
+          </div>
+      </nav>
+
+      <div class="section list">
+
+          <div class="list-header">
+              <div class="header">
+                  <img class="logo" src="assets/media/logo-mp.svg" alt="">
+              </div>
+
+              <div class="input">
+                  <input class="input-field" type="text" id="name" name="name" required minlength="4"
+                      maxlength="8" size="10" placeholder="search">
+                  <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.0005c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+              </div>
+          </div>
+
+          <div class="list-content">
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">01</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 1</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">002</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 2</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">003</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 3</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">004</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 4</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">005</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 5</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">006</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 6</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">007</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 7</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">008</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 8</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">009</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 9</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">010</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 10</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">011</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 11</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">012</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 12</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">013</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 13</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">014</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 14</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">015</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 15</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">016</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 16</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+
+              <div class="list-card">
+                  <div class="element circle">
+                      <div class="circle-element">017</div>
+                  </div>
+
+                  <div class="element text">
+                      <h3>Some department 17</h3>
+                      <p>Adress, Velika Gorica</p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+      <!-- Content of the page -->
+      <div class="section content content-mobile">
+          <div class="container-content">
+              <div class="block-info">
+                  <div class="description">
+                      <!-- img container -->
+                      <div class="description-image">
+                          <img src="assets/media/station-picture.PNG" alt="">
+                      </div>
+                      <!-- description container -->
+                      <div class="description-text">
+                          <h1>CVH STP Zagreb l</h1>
+
+                          <!-- description list-card -->
+                          <div class="description-item">
+                              <div class="element icon">
+                                  <span class="icon-location"></span>
+                              </div>
+
+                              <div class="element text">
+                                  <p>Adresa:</p>
+                                  <h3>Bazhana 14, Kyiv</h3>
+                              </div>
+                          </div>
+
+                          <!-- description list-card -->
+                          <div class="description-item">
+                              <div class="element icon">
+                                  <span class="icon-phone"></span>
+                              </div>
+
+                              <div class="element text">
+                                  <p>Broj telefona:</p>
+                                  <h3>+380963810559</h3>
+                              </div>
+                          </div>
+
+                          <!-- description list-card -->
+                          <div class="description-item">
+                              <div class="element icon">
+                                  <span class="icon-mail"></span>
+                              </div>
+
+                              <div class="element text">
+                                  <p>E-mail:</p>
+                                  <h3>i.beregovoy79@gmail.com</h3>
+                              </div>
+                          </div>
+
+                          <!-- description list-card -->
+                          <div class="description-item">
+                              <div class="element icon">
+                                  <span class="icon-fax"></span>
+                              </div>
+
+                              <div class="element text">
+                                  <p>Faks:</p>
+                                  <h3>01/5575083</h3>
+                              </div>
+                          </div>
+
+                          <!-- description list-card -->
+                          <div class="description-item">
+                              <div class="element icon">
+                                  <span class="icon-clock"></span>
+                              </div>
+
+                              <div class="element text">
+                                  <p>Radno vrijeme:</p>
+                                  <h3>Pon: 07:00 - 20:00 | Sub: 08:00 - 15:00</h3>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <h1 class="station-number">H-152</h1>
+
+              </div>
+
+              <button class="button-service">Popis usluga</button>
+
+              <div class="block-service">
+
+
+                  <h1>Usluge:</h1>
+                  <ul>
+                      <li>Preventivni tehnicki pregled kocnica</li>
+                      <li>Ispitivanje tahografa</li>
+                      <li>Ispitivanje lakih prikolica</li>
+                      <li>Ispitivanje lakog programa</li>
+                      <li>Ispitivanje teskog programa</li>
+                      <li>Ispitivanje vozila za prijevoz opasnih tvari</li>
+                      <li>Ispitivanje prema ITF/CEMT</li>
+                      <li>Skolski autobusi</li>
+                      <li>Homologacija svih tipova vozila</li>
+                      <li>Ispitivanje vozila</li>
+                      <li>Preventivni tehnicki pregled kocnica</li>
+                      <li>Ispitivanje tahografa</li>
+                      <li>Ispitivanje lakih prikolica</li>
+                      <li>Ispitivanje lakog programa</li>
+                      <li>Ispitivanje teskog programa</li>
+                      <li>Ispitivanje vozila za prijevoz opasnih tvari</li>
+                      <li>Ispitivanje prema ITF/CEMT</li>
+                      <li>Skolski autobusi</li>
+                      <li>Homologacija svih tipova vozila</li>
+                      <li>Ispitivanje vozila</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="container-accordion">
+              <!-- cards accordion -->
+              <div class="accordion-element" id="cards-section">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#cards-first-section" aria-expanded="true"
+                              aria-controls="cards-first-section">
+                              Kontakt podaci
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                      d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                              </svg>
+                          </button>
+                      </h2>
+                      <div id="cards-first-section" class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne" data-bs-parent="#cards-section">
+                          <div class="accordion-body">
+
+                              <div class="group">
+                                  <div class="accordion-card">
+                                      <div class="card-head">
+                                          <div class="name-info">
+                                              <div class="list-card">
+                                                  <div class="element circle">
+                                                      <div class="circle-element">MN</div>
+                                                  </div>
+                                                  <div class="element text">
+                                                      <h3>Some department</h3>
+                                                      <p>Adress, Velika Gorica</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="search-icon">
+                                              <a href="user.html">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-search"
+                                                      viewBox="0 0 16 16">
+                                                      <path
+                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                  </svg>
+                                              </a>
+                                          </div>
+                                      </div>
+
+                                      <hr>
+
+                                      <div class="card-body">
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-phone-small"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mobile"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mail"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>E-mail:</p>
+                                                  <h3>i.beregovoy79@gmail.com</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="icon-item">
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mail"></span>
+                                                  </div>
+                                              </div>
+
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mobile"></span>
+                                                  </div>
+                                              </div>
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span
+                                                          class="icon-phone-small"></span></div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <hr class="card-footer-line">
+
+                                      <div class="card-footer">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                              fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                              <path
+                                                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                          </svg>
+
+                                          <div class="circle-alert">025 <span class="tooltip-text">Djelatnik se
+                                                  privremeno nalazi na drugoj lokaciji</span></div>
+                                      </div>
+                                  </div>
+
+                                  <div class="accordion-card">
+                                      <div class="card-head">
+                                          <div class="name-info">
+                                              <div class="list-card">
+                                                  <div class="element circle">
+                                                      <div class="circle-element">MN</div>
+                                                  </div>
+                                                  <div class="element text">
+                                                      <h3>Some department</h3>
+                                                      <p>Adress, Velika Gorica</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="search-icon">
+                                              <a href="user.html">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-search"
+                                                      viewBox="0 0 16 16">
+                                                      <path
+                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                  </svg>
+                                              </a>
+                                          </div>
+                                      </div>
+
+                                      <hr>
+
+                                      <div class="card-body">
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-phone-small"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mobile"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mail"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>E-mail:</p>
+                                                  <h3>i.beregovoy79@gmail.com</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="icon-item">
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mail"></span>
+                                                  </div>
+                                              </div>
+
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mobile"></span>
+                                                  </div>
+                                              </div>
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span
+                                                          class="icon-phone-small"></span></div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <hr class="card-footer-line">
+
+                                      <div class="card-footer">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                              fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                              <path
+                                                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                          </svg>
+                                      </div>
+                                  </div>
+
+                                  <div class="accordion-card">
+                                      <div class="card-head">
+                                          <div class="name-info">
+                                              <div class="list-card">
+                                                  <div class="element circle">
+                                                      <div class="circle-element">MN</div>
+                                                  </div>
+                                                  <div class="element text">
+                                                      <h3>Some department</h3>
+                                                      <p>Adress, Velika Gorica</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="search-icon">
+                                              <a href="user.html">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-search"
+                                                      viewBox="0 0 16 16">
+                                                      <path
+                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                  </svg>
+                                              </a>
+                                          </div>
+                                      </div>
+
+                                      <hr>
+
+                                      <div class="card-body">
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-phone-small"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mobile"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mail"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>E-mail:</p>
+                                                  <h3>i.beregovoy79@gmail.com</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="icon-item">
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mail"></span>
+                                                  </div>
+                                              </div>
+
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mobile"></span>
+                                                  </div>
+                                              </div>
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span
+                                                          class="icon-phone-small"></span></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="accordion-card">
+                                      <div class="card-head">
+                                          <div class="name-info">
+                                              <div class="list-card">
+                                                  <div class="element circle">
+                                                      <div class="circle-element">MN</div>
+                                                  </div>
+                                                  <div class="element text">
+                                                      <h3>Some department</h3>
+                                                      <p>Adress, Velika Gorica</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="search-icon">
+                                              <a href="user.html">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-search"
+                                                      viewBox="0 0 16 16">
+                                                      <path
+                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                  </svg>
+                                              </a>
+                                          </div>
+                                      </div>
+
+                                      <hr>
+
+                                      <div class="card-body">
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-phone-small"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mobile"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>Broj telefona</p>
+                                                  <h3>+380963810559</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="description-item">
+                                              <div class="element icon">
+                                                  <span class="icon-mail"></span>
+                                              </div>
+                                              <div class="element text">
+                                                  <p>E-mail:</p>
+                                                  <h3>i.beregovoy79@gmail.com</h3>
+                                              </div>
+                                          </div>
+
+                                          <div class="icon-item">
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mail"></span>
+                                                  </div>
+                                              </div>
+
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span class="icon-mobile"></span>
+                                                  </div>
+                                              </div>
+                                              <div class="element circle">
+                                                  <div class="circle-element"><span
+                                                          class="icon-phone-small"></span></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="group extend-section">
+                                  <div class="accordion" id="cards-section-extend">
+                                      <div class="accordion-item">
+
+                                          <div id="cards-extend-section" class="accordion-collapse collapse"
+                                              aria-labelledby="headingOne" data-bs-parent="#cards-section-extend">
+                                              <div class="accordion-body">
+                                                  <div class="group">
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="group">
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="group">
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr class="card-footer-line">
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="accordion-card">
+                                                          <div class="card-head">
+                                                              <div class="name-info">
+                                                                  <div class="list-card">
+                                                                      <div class="element circle">
+                                                                          <div class="circle-element">MN</div>
+                                                                      </div>
+                                                                      <div class="element text">
+                                                                          <h3>Some department</h3>
+                                                                          <p>Adress, Velika Gorica</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="search-icon">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg"
+                                                                      width="16" height="16" fill="currentColor"
+                                                                      class="bi bi-search" viewBox="0 0 16 16">
+                                                                      <path
+                                                                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+
+                                                          <hr>
+
+                                                          <div class="card-body">
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-phone-small"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mobile"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>Broj telefona</p>
+                                                                      <h3>+380963810559</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="description-item">
+                                                                  <div class="element icon">
+                                                                      <span class="icon-mail"></span>
+                                                                  </div>
+                                                                  <div class="element text">
+                                                                      <p>E-mail:</p>
+                                                                      <h3>i.beregovoy79@gmail.com</h3>
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="icon-item">
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mail"></span></div>
+                                                                  </div>
+
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-mobile"></span></div>
+                                                                  </div>
+                                                                  <div class="element circle">
+                                                                      <div class="circle-element"><span
+                                                                              class="icon-phone-small"></span>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <h2 class="accordion-header" id="headingOne">
+                                              <button class="accordion-button extension-button" type="button"
+                                                  data-bs-toggle="collapse" data-bs-target="#cards-extend-section"
+                                                  aria-expanded="true" aria-controls="collapseOne">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                      fill="currentColor" class="bi bi-arrow-down-short"
+                                                      viewBox="0 0 16 16">
+                                                      <path fill-rule="evenodd"
+                                                          d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                                                  </svg>
+                                                  Prikazi vise
+                                              </button>
+                                          </h2>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- table accordion -->
+              <div class="accordion-element" id="table-section">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#table-first-section" aria-expanded="true"
+                              aria-controls="collapseOne">
+                              Organizacijski podaci
+
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                      d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                              </svg>
+                          </button>
+                      </h2>
+                      <div id="table-first-section" class="accordion-collapse collapse"
+                          aria-labelledby="headingOne" data-bs-parent="#table-section">
+                          <div class="accordion-body">
+                              <div class="accordion-table">
+                                  <div class="table first">
+                                      <h2>Neki naslov</h2>
+
+                                      <hr>
+
+                                      <div class="table-container">
+                                          <table style="width:100%">
+                                              <tr>
+                                                  <td>Vlasnistvo opreme</td>
+                                                  <td>CVH 100%</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Odrzavanje objekta</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Odrzavanje opreme</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Nabavka opreme</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Potrosni materijali</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Odrzavanje objekta</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Odrzavanje objekta</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                          </table>
+
+                                      </div>
+                                  </div>
+
+                                  <div class="table second">
+                                      <h2>Rjesenje MUP-a</h2>
+
+                                      <hr>
+
+                                      <div class="table-container">
+
+                                          <table style="width:100%">
+
+                                              <tr>
+                                                  <td>Klasa</td>
+                                                  <td>UP/0101023/2024</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Urbroj</td>
+                                                  <td>511-312-334</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Od</td>
+                                                  <td>22.03.2020</td>
+                                              </tr>
+                                          </table>
+
+                                      </div>
+                                  </div>
+
+                                  <div class="table third">
+                                      <h2>Raspodjela prihoda</h2>
+
+                                      <hr>
+
+                                      <div class="table-container">
+                                          <table style="width:100%">
+                                              <tr>
+                                                  <td></td>
+                                                  <td>%</td>
+                                                  <td>CVH (%)</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Amortizacija i dobit od objekta</td>
+                                                  <td>17,1</td>
+                                                  <td>17,1</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Amortizacija i dobit od objekta</td>
+                                                  <td>17,1</td>
+                                                  <td>17,1</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Amortizacija i dobit od objekta</td>
+                                                  <td>17,1</td>
+                                                  <td>17,1</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Energeti i komunalije</td>
+                                                  <td>4.7</td>
+                                                  <td>4.7</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Amortizacija i dobit od objekta</td>
+                                                  <td>3.8</td>
+                                                  <td>17,1</td>
+                                              </tr>
+                                          </table>
+
+                                          <table style="width:100%">
+
+                                              <tr>
+                                                  <td>Tahografi, Potvrde o km i dr.</td>
+                                                  <td>-</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Osiguranje objekta</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>Osiguranje opreme</td>
+                                                  <td>CVH</td>
+                                              </tr>
+                                          </table>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- map accordion -->
+              <div class="accordion-element" id="map-section">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#map-first-section" aria-expanded="true"
+                              aria-controls="map-first-section">
+                              Lokacija
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                      d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                              </svg> </button>
+                      </h2>
+                      <div id="map-first-section" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                          data-bs-parent="#map-section">
+                          <div class="accordion-body map-mobile">
+                              <iframe
+                                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.80340074342!2d16.0156439155686!3d45.79516627910626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6fd249a4a6d%3A0x1c9153e54fc8d274!2sCentar%20za%20vozila%20Hrvatske%20d.d.!5e0!3m2!1sen!2shr!4v1651740750853!5m2!1sen!2shr"
+                                  width="1578" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Gallery accordion -->
+              <div class="accordion-element" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header acc-gallery" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Galerija slika
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd"
+                                      d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                              </svg>
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <div class="accordion-carousel">
+
+                                  <!-- this one -->
+                                  <section class="center slider">
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-1.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-2.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-3.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-4.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-5.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-1.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-2.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-3.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-4.jpg">
+                                      </div>
+                                      <div>
+                                          <img width="auto" height="250px" src="assets/media/sto-5.jpg">
+                                      </div>
+                                  </section>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+
+
+
+      <div id="overlay"></div>
+
+
+<!-- </main> -->

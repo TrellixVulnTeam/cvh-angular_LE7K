@@ -1,0 +1,33 @@
+@import "colors", "typography", "shadows", "style-components", "buttons";
+
+#lessonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+
+    .words-translated {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .feedback {
+            width: 150px;
+            color: $dark;
+            text-align: center;
+            margin-top: 10px;
+
+            .answer-wrong {
+                color: red;
+            }
+
+            .answer-correct {
+                color: green;
+            }
+        }
+    }
+
+    button {
+        margin: 10px auto 0 auto;
+    }
+}

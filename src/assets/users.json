@@ -1,0 +1,93 @@
+
+  [
+  {
+    "id": 1,
+    "username": "jdoe1",
+    "name": "John Doe",
+    "email": "jdoe@mail.com",
+    "password": "john123",
+    "languages": [
+      {
+        "language": "spanish",
+        "level": 2
+      },
+      {
+        "language": "italian",
+        "level": 3
+      }
+    ],
+    "achievements": [
+      "smartest whale in the sea",
+      "fast like sailfish",
+      "ocean master"
+    ],
+    "points": 73
+  },
+  {
+    "id": 2,
+    "username": "mjane1",
+    "name": "Mary Jane",
+    "email": "mjane@mail.com",
+    "password": "mary123",
+    "languages": [
+      {
+        "language": "spanish",
+        "level": 1
+      }
+    ],
+    "achievements": [
+      "fast like sailfish"
+    ],
+    "points": 45
+  },{
+    "id": 3,
+    "username": "mjane1",
+    "name": "Mary Jane",
+    "email": "mjane@mail.com",
+    "password": "mary123",
+    "languages": [
+      {
+        "language": "spanish",
+        "level": 1
+      }
+    ],
+    "achievements": [
+      "fast like sailfish"
+    ],
+    "points": 46
+  },
+  {
+    "id": 4,
+    "username": "mjane1",
+    "name": "Mary Jane",
+    "email": "mjane@mail.com",
+    "password": "mary123",
+    "languages": [
+      {
+        "language": "spanish",
+        "level": 1
+      }
+    ],
+    "achievements": [
+      "fast like sailfish"
+    ],
+    "points": 32
+  },
+  {
+    "id": 5,
+    "username": "mjane1",
+    "name": "Mary Jane",
+    "email": "mjane@mail.com",
+    "password": "mary123",
+    "languages": [
+      {
+        "language": "spanish",
+        "level": 1
+      }
+    ],
+    "achievements": [
+      "fast like sailfish"
+    ],
+    "points": 89
+  }
+]

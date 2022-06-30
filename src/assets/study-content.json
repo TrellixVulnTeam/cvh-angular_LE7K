@@ -1,0 +1,30 @@
+{
+  "languages": ["spanish", "italian"],
+  "lessons": [
+    {
+      "topic": "family",
+      "words": ["father", "mother", "sister", "son", "brother"]
+    },
+    {
+      "topic": "food",
+      "words": ["bread", "meat", "fish", "carrot", "potato"]
+    },
+    {
+      "topic": "sport",
+      "words": ["soccer", "basketball", "stadium", "swimming", "workout"]
+    },
+    {
+      "topic": "school",
+      "words": ["teacher", "student", "book", "lecture", "pen"]
+    },
+    {
+      "topic": "travel",
+      "words": ["street", "direction", "passport", "money", "beach"]
+    }
+  ],
+  "achievements": [
+    "smartest whale in the sea",
+    "fast like sailfish",
+    "ocean master"
+  ]
+}

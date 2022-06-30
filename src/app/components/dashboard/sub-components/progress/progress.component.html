@@ -1,0 +1,47 @@
+<div id="progressContainer">
+  <header>
+    <h2>Learning Progress</h2>
+    <hr />
+    <select
+      id="selectLang"
+      [ngModel]="selectedLanguage"
+      (ngModelChange)="languageChange($event)"
+    >
+      <option
+        *ngFor="let lang of currentUser.languages; index as i"
+        [value]="lang.language"
+      >
+        {{ lang.language }}
+      </option>
+    </select>
+  </header>
+  <div class="progress-overview">
+    <div class="chart">
+      <circle-progress
+        [percent]="perc"
+        [radius]="50"
+        [outerStrokeWidth]="20"
+        [innerStrokeWidth]="20"
+        [outerStrokeColor]="'#35838D'"
+        [innerStrokeColor]="'#D6D6D6'"
+        [animation]="true"
+        [animationDuration]="300"
+        [titleColor]="'#35838D'"
+        [titleFontWeight]="800"
+      ></circle-progress>
+    </div>
+    <div class="statistics">
+      <div>
+        <h3>Lessons Completed</h3>
+        <p>{{ lessons }}/5</p>
+      </div>
+      <div>
+        <h3>Points</h3>
+        <p>{{ currentUser.points }}</p>
+      </div>
+    </div>
+    <div class="continue-container">
+      <button class="btn btn-primary" type="button" (click)="continue()">Continue</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+@import 'colors';
+
+.figure {
+  .triangle {
+
+    
+
+    position: relative;
+
+    img{
+      position: absolute;
+      right: -9px;
+      
+    }
+
+    &.up {
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-bottom: 110px solid $secondaryGrey;
+
+      &.bg-blue {
+        border-bottom: 110px solid $primaryBlue;
+        pointer-events: none;
+        //background-color: $primaryBlue;
+        //box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        //border-radius: 10px;
+      }
+
+      img{
+        top: 60px;        
+      }
+    }
+
+    &.down {
+      width: 0;
+      height: 0;
+      margin: -2rem;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-top: 110px solid $secondaryGrey;
+
+      &.bg-blue {
+        border-top: 110px solid $primaryBlue;
+        pointer-events: none;
+        //background-color: $primaryBlue;
+        //box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        //border-radius: 10px;
+      }
+
+      img{
+        bottom: 60px;
+      }
+    }
+
+    
+
+    
+    /* &:first-child{
+      border-bottom: 110px solid $primaryBlue;
+    } */
+    
+  }
+
+  
+  
+  
+}
+

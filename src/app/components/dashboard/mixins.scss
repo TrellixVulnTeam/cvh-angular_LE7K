@@ -1,0 +1,57 @@
+@mixin toolTip ($width: 160px, $padding: 10px, $line-height: unset, $top: unset, $marging-left: 35px) {
+    .tooltip-text {
+        visibility: hidden;
+        width: $width;
+        background-color: $blue-1;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: $padding;
+        position: absolute;
+        top: $top;
+        z-index: 2;
+        opacity: 1;
+        margin-left: $marging-left;
+        line-height: $line-height;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-left: -10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent $blue-1 transparent transparent;
+            transform: translatey(-50%);
+        }
+    }
+
+    &:hover .tooltip-text {
+        visibility: visible;
+    }
+}
+
+@mixin icon-custom ($marging-right, $url, $bckg-size, $width, $height) {
+    content: '';
+    float: left;
+    margin-right: $marging-right;
+    background-image: $url;
+    background-size: $bckg-size;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: $width;
+    height: $height;
+}
+
+@mixin figure-circle ($width, $height, $font-size, $bckg-color: red, $color: white) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $width;
+    height: $height;
+    border-radius: 50px;
+    font-size: $font-size;
+    background-color: $bckg-color;
+    color: $color;
+}

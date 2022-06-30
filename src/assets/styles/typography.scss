@@ -1,0 +1,26 @@
+@mixin heading1 {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+@mixin heading2 {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+}
+
+@mixin bodyText {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.02em;
+}
